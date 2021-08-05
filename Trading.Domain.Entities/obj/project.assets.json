@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Trading.Domain.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Trading.Domain.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trading.Domain.Interfaces.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Trading.Domain.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Trading.Domain.Interfaces/Trading.Domain.Interfaces.csproj",
+      "msbuildProject": "../Trading.Domain.Interfaces/Trading.Domain.Interfaces.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Trading.Domain.Interfaces >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\User\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Master degree diploma\\Trading\\Trading.Domain.Interfaces\\Trading.Domain.Interfaces.csproj": {
+              "projectPath": "D:\\Master degree diploma\\Trading\\Trading.Domain.Interfaces\\Trading.Domain.Interfaces.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
